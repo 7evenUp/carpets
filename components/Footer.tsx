@@ -9,6 +9,7 @@ import {
 } from '@chakra-ui/react';
 import { FaInstagram, FaTelegram, FaVk } from 'react-icons/fa';
 import { ReactNode } from 'react';
+import Link from 'next/link';
 
 const SocialButton = ({
   children,
@@ -54,7 +55,7 @@ export default function Footer() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Text>© 2023 Artyom Sheludeshev. All rights reserved</Text>
+        <Text>© 2023 <Link href={"https://www.ashel.site/"} target={"_blank"}>Artyom Sheludeshev</Link>. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Telegram'} href={'#'}>
             <FaTelegram size={30} />
